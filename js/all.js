@@ -35,7 +35,7 @@ function qrCodeBuild(e) {
         case "0":
             str += `
             <h1>生成時間:${nowDateTime}</h1>
-            <img src="${googleUrl}?cht=${chtType}&chl${urlValue}&chs=${imgSizeSm}&choe=${qrCodeLang}">
+            <img src="${googleUrl}?cht=${chtType}&chl=${urlValue}&chs=${imgSizeSm}&choe=${qrCodeLang}">
             `;
             break;
         case "1":
