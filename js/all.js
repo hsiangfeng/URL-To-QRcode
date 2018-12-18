@@ -5,9 +5,14 @@ let btnQrCode = document.getElementById('btn-QrCode');
 
 //確保網頁內容載入在執行
 window.onload = () => {
-    localQr()
-}
-
+    localQr();
+};
+function verify(e){
+    let str = e.target.value;
+    if(str == ''){
+        alert('欄位不得為空');
+    };
+};
 //獲取上一次QRCode紀錄
 function localQr() {
     let str = '';
@@ -16,8 +21,8 @@ function localQr() {
     str += strText + localStorage.getItem('qrCodeImg') || [];
     if (strLocal != '' && strLocal != null) {
         qrCodeImg.innerHTML = str;
-    }
-}
+    };
+};
 //生成QRCode
 function qrCodeBuild(e) {
     e.preventDefault();
@@ -55,10 +60,11 @@ function qrCodeBuild(e) {
             <h1>生成時間:${nowDateTime}</h1>
             <img src="${googleUrl}?cht=${chtType}&chl=${urlValue}&chs=${imgSizeSm}&choe=${qrCodeLang}">
             `;
-    }
+    };
     //儲存至localStorage
     localStorage.setItem('qrCodeImg', str);
     qrCodeImg.innerHTML = str;
-}
+};
 
-btnQrCode.addEventListener('click', qrCodeBuild, false)
+btnQrCode.addEventListener('click', qrCodeBuild, false);
+urlId.addEventListener('blur',verify,false);
