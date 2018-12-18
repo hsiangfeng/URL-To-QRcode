@@ -11,8 +11,10 @@ window.onload = () => {
 //獲取上一次QRCode紀錄
 function localQr() {
     let str = '';
-    str += `<h1>這是您上一次生成的QrCode</h1>` + localStorage.getItem('qrCodeImg') || [];
-    if (str != null) {
+    const strLocal = localStorage.getItem('qrCodeImg') || [];
+    const strText = '<h1>這是您上一次生成的QrCode</h1>';
+    str +=  strText + localStorage.getItem('qrCodeImg') || [];
+    if (strLocal != '' && strLocal != null) {
         qrCodeImg.innerHTML = str;
     }
 }
