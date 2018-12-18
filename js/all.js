@@ -12,7 +12,9 @@ window.onload = () => {
 function localQr() {
     let str = '';
     str += `<h1>這是您上一次生成的QrCode</h1>` + localStorage.getItem('qrCodeImg') || [];
-    qrCodeImg.innerHTML = str;
+    if (str != null) {
+        qrCodeImg.innerHTML = str;
+    }
 }
 //生成QRCode
 function qrCodeBuild(e) {
