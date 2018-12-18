@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nameGrounp {
+  margin-top: 20px;
+}
+
+.nameGrounp label {
+  display: block;
+  font-size: 16px;
+}
+
+.nameGrounp input {
+  width: 300px;
+  height: 54px;
+  border-radius: 5px;
+  border: 1px solid #6c757d;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.sizeGroup {
+  margin-top: 20px;
+}
+
+.sizeGroup label {
+  display: block;
+  font-size: 16px;
+}
+
+.sizeGroup select {
+  display: block;
+  width: 300px;
+  height: 54px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #6c757d;
+  font-size: 16px;
+}
+
+.sizeGroup a {
+  font-size: 14px;
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttonGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.buttonGroup a {
+  display: inline-block;
+  background-color: #28a745;
+  width: 120px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.buttonGroup a:hover {
+  background-color: #ffffff;
+  border: 3px solid #28a745;
+  color: #28a745;
+  line-height: 38px;
+}
+
+.buttonGroup input[type="reset"] {
+  width: 120px;
+  height: 44px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #28a745;
+  border: 0;
+  color: #ffffff;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttonGroup input[type="reset"]:hover {
+  background-color: #ffffff;
+  border: 3px solid #28a745;
+  color: #28a745;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer .qrCodeImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .qrCodeImg h1 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer .qrCodeImg img {
+  display: block;
+}
+/*# sourceMappingURL=all.css.map */
