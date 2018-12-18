@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>網址轉換QR</title>
+        <link rel="stylesheet" href="scss/all.css">
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <img src="https://images.unsplash.com/photo-1530989166579-96a5923c8ce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+                    width="300px;" height="300px;">
+            </div>
+            <div class="content">
+                <form action="#" method="post">
+                    <div class="nameGrounp">
+                        <label for="name">網址</label>
+                        <input type="text" id="name" placeholder="elmpamt.com">
+                    </div>
+                    <div class="sizeGroup">
+                        <label for="size">圖片大小</label>
+                        <select name="size" id="imgSize">
+                            <option value="0">120x120</option>
+                            <option value="1">200x200</option>
+                            <option value="2">400x400</option>
+                        </select>
+                        <a href="https://zxing.org/w/decode.jspx" target="_black">解碼QRcode</a>
+                    </div>
+                    <div class="buttonGroup">
+                        <a href="#" id="btn-QrCode">送出</a>
+                        <input type="reset" value="重設">
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <div class="qrCodeImg" id="qrCodeImg"></div>
+            </div>
+        </div>
+        <script src="js/all.js"></script>
+    </body>
+
+</html>

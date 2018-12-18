@@ -1,0 +1,106 @@
+@import "reset";
+@import "mixin";
+@import "variable";
+body{
+    font-family: $font-family;
+}
+.wrap{
+    max-width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    @include flex-center;
+    flex-direction: column;
+}
+.nameGrounp{
+    margin-top:20px;
+    label{
+        display: block;
+        font-size: $font-size-md;
+    }
+    input{
+        width: 300px;
+        height: 54px;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        font-size: $font-size-md;
+        padding: 15px;
+    }
+}
+.sizeGroup{
+    margin-top:20px;
+    label{
+        display: block;
+        font-size: $font-size-md;
+    }
+    select{
+        display: block;
+        width: 300px;
+        height: 54px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        font-size: $font-size-md;
+    }
+    a{
+        font-size: $font-size-sm;
+        color:$success;
+        text-decoration: none;
+        font-weight: $font-bold;
+    }
+}
+.buttonGroup{
+    @include flex-center;
+    margin-top:20px;
+    a{
+        display: inline-block;
+        background-color: $success;
+        width: 120px;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+        color:$white;
+        text-decoration: none;
+        font-size: $font-size-md;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-weight:  $font-bold;
+        &:hover{
+            background-color: $white;
+            border: 3px solid $success;
+            color:$success;
+            line-height: 38px;
+        }
+    }
+    input[type="reset"]{
+        width: 120px;
+        height: 44px;
+        border-radius: 5px;
+        font-size: $font-size-md;
+        background-color: $success;
+        border: 0;
+        color:$white;
+        margin-left: 5px;
+        font-weight:  $font-bold;
+        cursor: pointer;
+        &:hover{
+            background-color: $white;
+            border: 3px solid $success;
+            color:$success;
+        }
+    }
+}
+.footer{
+    margin-top:20px;
+    .qrCodeImg{
+        @include flex-center;
+        flex-direction: column;
+        h1{
+            margin-bottom: 20px;
+            font-size: $font-size-md;
+            font-weight: $font-bold;
+        }
+        img{
+            display: block;
+        }
+    }
+}
