@@ -13,7 +13,7 @@ function localQr() {
     let str = '';
     const strLocal = localStorage.getItem('qrCodeImg') || [];
     const strText = '<h1>這是您上一次生成的QrCode</h1>';
-    str +=  strText + localStorage.getItem('qrCodeImg') || [];
+    str += strText + localStorage.getItem('qrCodeImg') || [];
     if (strLocal != '' && strLocal != null) {
         qrCodeImg.innerHTML = str;
     }
@@ -50,6 +50,11 @@ function qrCodeBuild(e) {
             <img src="${googleUrl}?cht=${chtType}&chl=${urlValue}&chs=${imgSizeLg}&choe=${qrCodeLang}">
             `;
             break;
+        default:
+            str += `
+            <h1>生成時間:${nowDateTime}</h1>
+            <img src="${googleUrl}?cht=${chtType}&chl=${urlValue}&chs=${imgSizeSm}&choe=${qrCodeLang}">
+            `;
     }
     //儲存至localStorage
     localStorage.setItem('qrCodeImg', str);
