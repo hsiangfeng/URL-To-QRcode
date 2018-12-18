@@ -3,17 +3,18 @@ let imgSize = document.getElementById('imgSize');
 let qrCodeImg = document.getElementById('qrCodeImg');
 let btnQrCode = document.getElementById('btn-QrCode');
 
-
+//確保網頁內容載入在執行
 window.onload = () => {
     localQr()
 }
 
+//獲取上一次QRCode紀錄
 function localQr() {
     let str = '';
     str += `<h1>這是您上一次生成的QrCode</h1>` + localStorage.getItem('qrCodeImg') || [];
     qrCodeImg.innerHTML = str;
 }
-
+//生成QRCode
 function qrCodeBuild(e) {
     e.preventDefault();
     let urlValue = urlId.value;
@@ -46,6 +47,7 @@ function qrCodeBuild(e) {
             `;
             break;
     }
+    //儲存至localStorage
     localStorage.setItem('qrCodeImg', str);
     qrCodeImg.innerHTML = str;
 }
